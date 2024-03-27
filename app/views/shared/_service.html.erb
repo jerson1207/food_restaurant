@@ -1,0 +1,93 @@
+<section class="section service bg-black-10 text-center" aria-label="service">
+  <div class="container">
+
+    <p class="section-subtitle label-2">Flavors For Royalty</p>
+
+    <h2 class="headline-1 section-title">We Offer Top Notch</h2>
+
+    <p class="section-text">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industrys
+      standard dummy text ever.
+    </p>
+
+    <ul class="grid-list">
+
+      <li>
+        <div class="service-card">
+
+          <%= link_to "#", class: "has-before hover:shine" do %>
+            <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+              <%= image_tag("service-1.jpg", width: 285, height: 336, alt: "Breakfast", class: "img-cover", loading: "lazy") %>
+            </figure>
+          <% end %>
+
+          <div class="card-content"> 
+
+            <h3 class="title-4 card-title">
+              <%= link_to "#", "Breakfast" %>
+            </h3>
+
+            <%= link_to "#", class: "btn-text hover-underline label-2" do %>
+              View Menu
+            <% end %>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="service-card">
+
+          <%= link_to "#", class: "has-before hover:shine" do %>
+            <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+              <%= image_tag("service-2.jpg", width: 285, height: 336, alt: "Appetizers", class: "img-cover", loading: "lazy") %>
+            </figure>
+          <% end %>
+
+          <div class="card-content">
+
+            <h3 class="title-4 card-title">
+              <%= link_to "#", "Appetizers" %>
+            </h3>
+
+            <%= link_to "#", class: "btn-text hover-underline label-2" do %>
+              View Menu
+            <% end %>
+
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="service-card">
+
+          <%= link_to "#", class: "has-before hover:shine" do %>
+            <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+              <%= image_tag("service-3.jpg", width: 285, height: 336, alt: "Drinks", class: "img-cover", loading: "lazy") %>
+            </figure>
+          <% end %>
+
+          <div class="card-content">
+
+            <h3 class="title-4 card-title">
+              <%= link_to "#", "Drinks" %>
+            </h3>
+
+            <%= link_to "#", class: "btn-text hover-underline label-2" do %>
+              View Menu
+            <% end %>
+
+          </div>
+
+        </div>
+      </li>
+
+    </ul>
+
+    <%= image_tag("shape-1.png", width: 246, height: 412, alt: "shape", class: "shape shape-1 move-anim", loading: "lazy") %>
+    <%= image_tag("shape-2.png", width: 343, height: 345, alt: "shape", class: "shape shape-2 move-anim", loading: "lazy") %>
+
+  </div>
+</section>

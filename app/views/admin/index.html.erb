@@ -1,0 +1,17 @@
+<div class="customer--status">
+  <div class="card">
+    <h2>Pending</h2>
+    <h1><%= @pending_count %></h1>
+  </div>
+
+  <div class="card">
+    <h2>Process</h2>
+    <h1><%= @confirmed_count %></h1>
+  </div>
+
+  <div class="card">
+    <h2>Cancel</h2>
+    <h1><%= @canceled_count %></h1>
+  </div>
+</div>
+<%= render 'reservations_tbl' %>

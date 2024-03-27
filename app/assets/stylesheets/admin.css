@@ -1,0 +1,86 @@
+.admin-container {
+  display: flex;
+  /* height: 100vh; */
+}
+.admin-sidebar {
+  width: 250px;
+  background-color: #191C24;
+  padding: 20px;
+  color: white;
+}
+
+.admin-logo {
+  color: #EB1616
+}
+.admin-content {
+  flex: 1;
+
+  padding: 20px;
+  color: white;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.box {
+  width: 200px;
+  height: 150px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: hsl(38, 61%, 73%);}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* status card */
+.customer--status {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.card {
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  border: 2px solid #ccc;
+}
+
+.card h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+
+  color: hsl(38, 61%, 73%);
+  text-align: center; /* Center the text within h2 */
+}

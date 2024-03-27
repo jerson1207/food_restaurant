@@ -1,0 +1,47 @@
+<section class="section menu" aria-label="menu-label" id="menu">
+  <div class="container">
+    <p class="section-subtitle text-center label-2">Special Selection</p>
+    <h2 class="headline-1 section-title text-center">Delicious Menu</h2>
+    <ul class="grid-list">
+      <% menu_items = [
+          { image: "menu-1.png", title: "Greek Salad", badge: "Seasonal", price: "$25.50", description: "Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese." },
+          { image: "menu-2.png", title: "Lasagne", badge: nil, price: "$40.00", description: "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices." },
+          { image: "menu-3.png", title: "Butternut Pumpkin", badge: nil, price: "$10.00", description: "Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand." },
+          { image: "menu-4.png", title: "Tokusen Wagyu", badge: "New", price: "$39.00", description: "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices." },
+          { image: "menu-5.png", title: "Olivas Rellenas", badge: nil, price: "$25.00", description: "Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper." },
+          { image: "menu-6.png", title: "Opu Fish", badge: nil, price: "$49.00", description: "Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices." }
+        ]
+      %>
+      <% menu_items.each do |item| %>
+        <li>
+          <div class="menu-card hover:card">
+            <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+              <%= image_tag(item[:image], width: 100, height: 100, loading: "lazy", alt: item[:title], class: "img-cover") %>
+            </figure>
+            <div>
+              <div class="title-wrapper">
+                <h3 class="title-3">
+                  <a href="#" class="card-title"><%= item[:title] %></a>
+                </h3>
+                <% if item[:badge] %>
+                  <span class="badge label-1"><%= item[:badge] %></span>
+                <% end %>
+                <span class="span title-2"><%= item[:price] %></span>
+              </div>
+              <p class="card-text label-1"><%= item[:description] %></p>
+            </div>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+    <p class="menu-text text-center">
+      During winter daily from <span class="span">7:00 pm</span> to <span class="span">9:00 pm</span>
+    </p>
+    <%= link_to "#", class: "btn btn-primary" do %>
+      <span class="text text-1">View All Menu</span>
+      <span class="text text-2" aria-hidden="true">View All Menu</span>
+    <% end %>
+    <%= image_tag("shape-5.png", width: 921, height: 1036, loading: "lazy", alt: "shape", class: "shape shape-2 move-anim") %>
+    <%= image_tag("shape-6.png", width: 343, height: 345, loading: "lazy", alt: "shape", class: "shape shape-3 move-anim") %>
+  </div>
+</section>

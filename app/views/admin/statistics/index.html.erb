@@ -1,0 +1,13 @@
+<div data-controller="statistics" 
+    data-dashboard-revenue-value="<%= @online_reservations.to_json %>" >
+  <%= form_tag online_reservations_path, method: :get do %>
+    <%= label_tag :start_date, "Start Date" %>
+    <%= date_field_tag :start_date, @start_date %>
+
+    <%= label_tag :end_date, "End Date" %>
+    <%= date_field_tag :end_date, @end_date %>
+
+    <%= submit_tag "Filter" %>
+  <% end %>
+  <canvas id="line-chart" ></canvas>
+</div>

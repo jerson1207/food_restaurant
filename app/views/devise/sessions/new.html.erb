@@ -1,0 +1,18 @@
+<div class="section has-bg-image text-center">
+  <div class="container">
+
+    <h2>Log in</h2>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name),  class: 'input-wrapper') do |f| %>
+      <div class="field icon-wrappe">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'input-field' %>
+      </div>
+
+      <div class="field icon-wrappe">
+        <%= f.label :password %><br />
+        <%= f.password_field :password, autocomplete: "current-password", class: 'input-field' %>
+      </div>
+      <%= f.submit "Log in" %>
+    <% end %>
+  </div>
+</div>

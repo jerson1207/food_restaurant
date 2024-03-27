@@ -1,0 +1,27 @@
+<table id="customers">
+  <thead>
+    <th>Ticket ID</th>
+    <th>Name</th>
+    <th>Phone Number</th>
+    <th>Pax</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Message</th>
+    <th>status</th>
+  </thead>
+  <tbody>
+    <% @online_reservations.each do |ticket| %>
+      <tr>
+        <td><%= ticket.id %></td>
+        <td><%= ticket.name %></td>
+        <td><%= ticket.phone_number %></td>
+        <td><%= ticket.pax %></td>
+        <td><%= ticket.date.strftime("%m/%d/%Y") %></td>
+        <td><%= ticket.time.strftime("%I:%M%p")  %></td>
+        <td><%= ticket.message %></td>
+        <td><%= ticket.status %></td>
+      <tr>
+    <% end %>
+  </tbody>
+</table>
+
