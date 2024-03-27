@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# food_restaurant
+grilli - food restaurant sample
+>>>>>>> 0be763a5ab9f43649d0080b26f27ad65ad5d84a7
