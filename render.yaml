@@ -1,5 +1,5 @@
 databases:
-  - name: postgres
+  - name: grilli
     ipAllowList: []
     databaseName: grilli
     user: grilli
@@ -13,7 +13,7 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: postgres
+          name: grilli
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
