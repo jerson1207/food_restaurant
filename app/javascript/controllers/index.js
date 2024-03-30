@@ -13,9 +13,6 @@ application.register("hello", HelloController)
 import HeroSliderController from "./hero_slider_controller"
 application.register("hero-slider", HeroSliderController)
 
-import NavbarController from "./navbar_controller"
-application.register("navbar", NavbarController)
-
 import StatisticsController from "./statistics_controller"
 application.register("statistics", StatisticsController)
 
