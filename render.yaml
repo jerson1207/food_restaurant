@@ -1,5 +1,6 @@
 databases:
-  - name: grilli
+  - name: postgres
+    ipAllowList: []
     databaseName: grilli
     user: grilli
     plan: free
