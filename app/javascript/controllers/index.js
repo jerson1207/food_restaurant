@@ -13,6 +13,9 @@ application.register("hello", HelloController)
 import HeroSliderController from "./hero_slider_controller"
 application.register("hero-slider", HeroSliderController)
 
+import ReservationFormController from "./reservation_form_controller"
+application.register("reservation-form", ReservationFormController)
+
 import StatisticsController from "./statistics_controller"
 application.register("statistics", StatisticsController)
 

@@ -1,5 +1,7 @@
 class AdminController < ApplicationController
   layout 'admin'
+  before_action :authenticate_admin!
+
   def index
     @online_reservations = OnlineReservation.all
     @pending_count = @online_reservations.where(status: "pending").count

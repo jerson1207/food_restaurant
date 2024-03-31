@@ -26,7 +26,8 @@ class OnlineReservationsController < ApplicationController
     if @online_reservation.save
       redirect_to online_reservation_path(@online_reservation), notice: 'Online reservation was successfully created.'
     else
-      redirect_to root_path, alert: 'Failed to create online reservation.'
+      flash[:alert] = 'Failed to create online reservation.'
+      redirect_to root_path
     end
   end
 
