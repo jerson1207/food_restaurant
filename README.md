@@ -59,7 +59,7 @@ If you want to set up another admin, you may need to create an admin user. To cr
 - Run the Rails console by typing `rails console` and pressing Enter.
 - In the Rails console, execute the following command to create an admin user:
   ```ruby
-  AdminUser.create!(email: 'yourmail@test.com', password: 'your_chosen_password')
+  AdminUser.create!(email: 'yourmail@test.com', password: 'yourpassword')
   ```
   ---
 
