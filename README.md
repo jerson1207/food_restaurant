@@ -51,7 +51,9 @@ To access the admin panel, follow these steps:
 3. You will be prompted to log in with your admin credentials.
    - **Email:** admin@test.com
    - **Password:** qwerty
-If you want to set up admin credentials, you may need to create an admin user. To create an admin user:
+---
+**_NOTE:_**
+If you want to set up another admin, you may need to create an admin user. To create an admin user
 - Open your terminal.
 - Navigate to your Rails application directory.
 - Run the Rails console by typing `rails console` and pressing Enter.
@@ -59,6 +61,7 @@ If you want to set up admin credentials, you may need to create an admin user. T
   ```ruby
   AdminUser.create!(email: 'yourmail@test.com', password: 'your_chosen_password')
   ```
+  ---
 
   
 
